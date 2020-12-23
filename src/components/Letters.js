@@ -7,7 +7,8 @@ class Letters extends Component {
             <div id='letters'>
                 <div id='availableLetters'> Available letters: {Object.keys(this.props.letterStatus).map(k => {
                     return (
-                        this.props.letterStatus[k] ? <span class="true" ><Letter letter={k} /> </span> : <span class="false" ><Letter letter={k} /> </span>
+                        this.props.letterStatus[k] ? <span className="false" ><Letter selectLetter={this.props.selectLetter} letter={k} /> </span>
+                            : <span className="true" ><Letter selectLetter={this.props.selectLetter} letter={k} /> </span>
                     )
                 })}
                 </div>

@@ -39,3 +39,14 @@
 .false {
   text-decoration: line-through;
 }
+.highScore{
+  background-color: green;
+}
+
+.medScore{
+  background-color: yellow;
+}
+
+.lowScore{
+  background-color: red;
+}
